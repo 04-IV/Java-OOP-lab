@@ -1,0 +1,85 @@
+public class main{
+        static void WorkerID() {
+       System.out.println("Welcome to workers table");
+       System.out.print("/Worker-ID-Num");
+       System.out.print("/Worker-First-Name");
+       System.out.print("/Worker-Last-Name");
+       System.out.println("/Worker-Phone-Num/");
+       System.out.println("////Borders////"); 
+            
+        };
+
+   
+       static void JobInfo(){
+         System.out.println("Welcome to Job-Info table");
+         System.out.print("/Role");
+         System.out.print("/Department");
+         System.out.print("/Hire-Date");
+         System.out.print("/Employment-Time");
+         System.out.print("/Status");
+         System.out.print("/Shift-Type");
+         System.out.println("/Working-Hours-Per-Day");
+         System.out.println("////BORDERS////") ;
+       };
+  
+
+  
+       static void Salary(){
+           System.out.println("Welcome to Salary table");
+           System.out.print("/Salary-Type");
+           System.out.print("/Base-Salary");
+           System.out.print("/Payment-Method");
+           System.out.print("/Last-Payment-Day");
+           System.out.println("/Bonus-And-Penalty/");
+          
+       }; 
+           
+        static void Animal(){
+          System.out.println("////BORDERS////");
+          System.out.println("Welcome to Animal table");
+          System.out.print("/Animal-ID");
+          System.out.print("/Gender");
+          System.out.print("/Type");
+          System.out.print("/Breed");
+          System.out.print("/Health-State");
+          System.out.print("/Location");
+          System.out.println("/Owned-Since");
+        };
+        static void TradingHstory(){
+          System.out.println("////BORDERS////");
+          System.out.println("Welcome to Trading history table");
+          System.out.print("/Animal-ID");
+          System.out.print("/transaction-Type");
+          System.out.print("/Contact-Num");
+          System.out.print("/Price");
+          System.out.print("/Payment-method");
+          System.out.println("/Payment-Status");
+          
+        };
+        
+        static void HealthTracking(){
+          System.out.println("////BORDERS////");
+          System.out.println("Welcome to Health Tracking");
+          System.out.print("/Animal-ID");
+          System.out.print("/Weight");
+          System.out.print("/Health-Status");
+          System.out.print("/Age");
+          System.out.println("/sicknesses");
+        };
+           
+           
+       
+ 
+ 
+   
+   
+   
+       public static void main(String[] args) {
+        WorkerID();
+        JobInfo();
+        Salary();
+        Animal();
+        TradingHstory();
+        HealthTracking();
+       };
+};
