@@ -5,12 +5,17 @@ public class main{
        System.out.print("/Worker-First-Name");
        System.out.print("/Worker-Last-Name");
        System.out.println("/Worker-Phone-Num/");
-       System.out.println("////Borders////"); 
             
         };
 
+       static void WorkerData() {
+    System.out.println("00000000004       Ali               Mansour           050-123-4567");
+    System.out.println("00000000005       Sara              Ahmed             050-987-6543");
+    System.out.println("00000000006       John              Doe               055-111-2222"); 
+       };
    
        static void JobInfo(){
+         System.out.println("////Borders////"); 
          System.out.println("Welcome to Job-Info table");
          System.out.print("/Role");
          System.out.print("/Department");
@@ -18,11 +23,17 @@ public class main{
          System.out.print("/Employment-Time");
          System.out.print("/Status");
          System.out.print("/Shift-Type");
-         System.out.println("/Working-Hours-Per-Day");
+         System.out.println("/Working-Hours-Per-Day/");
          System.out.println("////BORDERS////") ;
        };
-  
-
+        
+         static void JobData();
+   
+           System.out.println("/Role        /Department  /Hire-Date   /Time       /Status     /Shift      /Hours");
+           System.out.println("Manager      Operations   2023-01-10   Full-Time   Active      Day         8");
+           System.out.println("Supervisor   Logistics    2023-05-15   Full-Time   Active      Night       10");
+           System.out.println("////BORDERS////");
+       };
   
        static void Salary(){
            System.out.println("Welcome to Salary table");
@@ -32,7 +43,15 @@ public class main{
            System.out.print("/Last-Payment-Day");
            System.out.println("/Bonus-And-Penalty/");
           
-       }; 
+       };  
+       static void SalaryData();
+           System.out.println("Monthly      5000         Bank         2024-03-25   +200");
+           System.out.println("Weekly       1200         Cash         2024-03-28   -50");
+        };
+       
+       
+       
+       
            
         static void Animal(){
           System.out.println("////BORDERS////");
@@ -43,19 +62,35 @@ public class main{
           System.out.print("/Breed");
           System.out.print("/Health-State");
           System.out.print("/Location");
-          System.out.println("/Owned-Since");
+          System.out.println("/Owned-Since/");
         };
+        
+         static void AnimalData(){
+    
+          System.out.println("A-001        Male    Camel   Majaheem    Healthy     Pen-A       2022-11-01");
+          System.out.println("A-002        Female  Horse   Arabian     Injury      Stable-3    2023-02-14");
+        };
+        
+        
+        
+        
+        
         static void TradingHstory(){
           System.out.println("////BORDERS////");
           System.out.println("Welcome to Trading history table");
           System.out.print("/Animal-ID");
-          System.out.print("/transaction-Type");
+          System.out.print("/Transaction-Type");
           System.out.print("/Contact-Num");
           System.out.print("/Price");
           System.out.print("/Payment-method");
-          System.out.println("/Payment-Status");
+          System.out.println("/Payment-Status/");
           
         };
+         static void TradingData(){
+          System.out.println("A-001        Purchase    050-111-22   15000       Wire        Cleared");
+          System.out.println("A-005        Sale        055-333-44   12000       Cash        Pending");
+        };
+        
         
         static void HealthTracking(){
           System.out.println("////BORDERS////");
@@ -64,11 +99,30 @@ public class main{
           System.out.print("/Weight");
           System.out.print("/Health-Status");
           System.out.print("/Age");
-          System.out.println("/sicknesses");
+          System.out.println("/Sicknesses/");
         };
+        static void HealthTrackingData(){
+    
+          System.out.println("A-001        450kg       Stable      5 Years     None");
+          System.out.println("A-002        380kg       Checkup     3 Years     Flu");
+       };
+        
+        
            
-           
-       
+        static void Stock(){
+          System.out.println("////BORDERS////");
+          System.out.println("Welcome to Stock");
+          System.out.print("/Stocked-Food");
+          System.out.print("/Amount");
+          System.out.print("/Target");
+          System.out.print("/Stored-In");
+          System.out.println("/Expires-On/");
+        };   
+       static void StockData();
+    
+        System.out.println("Alfalfa      500kg       Camels      Silo-1      2025-06-01");
+        System.out.println("Barley       200kg       Horses      Shed-B      2024-12-15");
+       };
  
  
    
@@ -76,10 +130,64 @@ public class main{
    
        public static void main(String[] args) {
         WorkerID();
+        WorkerData();
         JobInfo();
+        JobData();
         Salary();
+        SalaryData();
         Animal();
+        AnimalData();
         TradingHstory();
+        TradingData();
         HealthTracking();
+        HealthTrackingData();
+        Stock();
+        StockData();
        };
 };
+
+//Welcome to workers table
+///Worker-ID-Num/Worker-First-Name/Worker-Last-Name/Worker-Phone-Num/
+////00000000004       Ali               Mansour           050-123-4567
+////00000000005       Sara              Ahmed             050-987-6543
+////00000000006       John              Doe               055-111-2222
+////////Borders////
+////Welcome to Job-Info table
+///Role        /Department  /Hire-Date   /Time       /Status     /Shift      /Hours
+//Manager      Operations   2023-01-10   Full-Time   Active      Day         8
+//Supervisor   Logistics    2023-05-15   Full-Time   Active      Night       10
+//////BORDERS////
+//Welcome to Salary table
+///Type        /Base        /Method      /Last-Pay    /Bonus-Penalty
+//Monthly      5000         Bank         2024-03-25   +200
+//Weekly       1200         Cash         2024-03-28   -50
+//////BORDERS////
+//Welcome to Animal table
+///ID          /Gender /Type   /Breed      /Health     /Location   /Owned-Since
+//A-001        Male    Camel   Majaheem    Healthy     Pen-A       2022-11-01
+//A-002        Female  Horse   Arabian     Injury      Stable-3    2023-02-14
+//////BORDERS////
+//Welcome to Trading history table
+///Animal-ID   /Type       /Contact     /Price      /Method     /Status
+//A-001        Purchase    050-111-22   15000       Wire        Cleared
+//A-005        Sale        055-333-44   12000       Cash        Pending
+//////BORDERS////
+//Welcome to Health Tracking
+///Animal-ID   /Weight     /Status     /Age        /Sicknesses
+//A-001        450kg       Stable      5 Years     None
+//A-002        380kg       Checkup     3 Years     Flu
+//////BORDERS////
+//Welcome to Stock
+///Food-Type   /Amount     /Target     /Stored-In  /Expires
+//Alfalfa      500kg       Camels      Silo-1      2025-06-01
+//Barley       200kg       Horses      Shed-B      2024-12-15
+
+
+
+
+
+
+
+
+
+
